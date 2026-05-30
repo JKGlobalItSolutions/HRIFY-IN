@@ -204,16 +204,16 @@ function Services() {
 
 
 
-const fadeUpStyle = {
-  animation: "fadeUp 1.2s ease-out forwards",
-  opacity: 0,
-};
+    const fadeUpStyle = {
+        animation: "fadeUp 1.2s ease-out forwards",
+        opacity: 0,
+    };
 
-const arrowStyle = {
-  fontSize: "50px",
-  display: "inline-block",
-  animation: "arrowMove 1.5s ease-in-out infinite",
-};
+    const arrowStyle = {
+        fontSize: "50px",
+        display: "inline-block",
+        animation: "arrowMove 1.5s ease-in-out infinite",
+    };
 
 
 
@@ -225,61 +225,61 @@ const arrowStyle = {
         <>
 
             {/* Inject responsive styles */}
-           
-   {/* ================= HERO SECTION ================= */}
-      <div className="container-fluid p-0">
-      <div
-        className="d-flex align-items-center"
-        style={{
-          position: "relative",
-          minHeight: "100vh",
-          width: "100%",
-          backgroundImage: `url(${img1})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          overflow: "hidden",
-        }}
-      >
-        {/* Gradient Overlay */}
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background:
-              "linear-gradient(to right, rgba(0, 0, 0, 0.24), rgba(0,0,0,0))",
-            zIndex: 1,
-          }}
-        />
 
-        {/* Content */}
-        <div
-          className="container"
-          style={{
-            position: "relative",
-            zIndex: 2,
-            color: "#fff",
-            paddingTop: "120px",
-            paddingBottom: "60px",
-            paddingLeft: "30px",
-            ...fadeUpStyle,
-          }}
-        >
-          <h1 style={{ fontSize: "75px", fontWeight: "700" }}>
-           Services
-          </h1>
+            {/* ================= HERO SECTION ================= */}
+            <div className="container-fluid p-0">
+                <div
+                    className="d-flex align-items-center"
+                    style={{
+                        position: "relative",
+                        minHeight: "100vh",
+                        width: "100%",
+                        backgroundImage: `url(${img1})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                        overflow: "hidden",
+                    }}
+                >
+                    {/* Gradient Overlay */}
+                    <div
+                        style={{
+                            position: "absolute",
+                            inset: 0,
+                            background:
+                                "linear-gradient(to right, rgba(0, 0, 0, 0.24), rgba(0,0,0,0))",
+                            zIndex: 1,
+                        }}
+                    />
 
-          <h3 style={{ fontSize: "32px", fontWeight: "400" }}>
-           Smart IT Solutions Limitless Potential
-          </h3>
+                    {/* Content */}
+                    <div
+                        className="container"
+                        style={{
+                            position: "relative",
+                            zIndex: 2,
+                            color: "#fff",
+                            paddingTop: "120px",
+                            paddingBottom: "60px",
+                            paddingLeft: "30px",
+                            ...fadeUpStyle,
+                        }}
+                    >
+                        <h1 style={{ fontSize: "75px", fontWeight: "700" }}>
+                            Services
+                        </h1>
 
-          {/* Animated Arrow */}
-          <p style={arrowStyle}>→</p>
-        </div>
+                        <h3 style={{ fontSize: "32px", fontWeight: "400" }}>
+                            Smart IT Solutions Limitless Potential
+                        </h3>
 
-        {/* Animations */}
-        <style>
-          {`
+                        {/* Animated Arrow */}
+                        <p style={arrowStyle}>→</p>
+                    </div>
+
+                    {/* Animations */}
+                    <style>
+                        {`
             @keyframes fadeUp {
               from {
                 opacity: 0;
@@ -303,9 +303,9 @@ const arrowStyle = {
               }
             }
           `}
-        </style>
-      </div>
-    </div>
+                    </style>
+                </div>
+            </div>
 
 
 
@@ -316,59 +316,65 @@ const arrowStyle = {
 
 
                 <div
-                                    className="container-fluid py-5 mt-0"
+                    className="container-fluid py-5 mt-0"
+                    style={{
+                        background: "linear-gradient(135deg, #CFF4FF 0%, #FFFFFF 100%)",
+                    }}
+                >
+                    <div className="container">
+                        <div className="row align-items-center">
+
+                            {/* LEFT CONTENT - col-8 */}
+                            <div className="col-12 col-md-8 mb-4 mb-md-0">
+                                <h2
                                     style={{
-                                        background: "linear-gradient(135deg, #CFF4FF 0%, #FFFFFF 100%)",
+                                        fontWeight: "700",
+                                        marginBottom: "20px",
+                                        color: "#015670",
+                                        fontSize: "24px",
+                                        fontFamily: "'Outfit', sans-serif"
                                     }}
                                 >
-                                    <div className="container">
-                                        <div className="row align-items-center">
-                
-                                            {/* LEFT CONTENT - col-8 */}
-                                            <div className="col-12 col-md-8 mb-4 mb-md-0">
-                                                <h2
-                                                    style={{
-                                                        fontWeight: "700",
-                                                        marginBottom: "20px",
-                                                        color: "#015670",
-                                                        fontSize: "24px",
-                                                        fontFamily: "'Outfit', sans-serif"
-                                                    }}
-                                                >
-                                                    Empowering Businesses with Cutting-Edge IT Solutions
-                                                </h2>
-                
-                                                <p style={{ fontSize: "18px", lineHeight: "1.7", fontFamily: "'Outfit', sans-serif" }}>
-                                                    HRIFY is a comprehensive management solutions platform designed to enhance efficiency and drive growth. With two specialized divisions, HRIFY seamlessly integrates cutting-edge technology with expert talent management. HRIFYDIGITAL offers exceptional software, web, and app development, advanced networking solutions, and expert IT services and consulting to future-proof your business.
-                                                </p>
-                
-                                            </div>
-                
-                                            {/* RIGHT IMAGE - col-4 */}
-                                            <div className="col-12 col-md-4 text-center">
-                                                <div
-                                                    style={{
-                                                        backgroundColor: "#FFFFFF",
-                                                        padding: "20px",
-                                                        borderRadius: "14px",
-                                                        // boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
-                                                        display: "inline-block",
-                                                    }}
-                                                >
-                                                    <img
-                                                        src={img2}
-                                                        alt="IT Solutions"
-                                                        className="img-fluid"
-                                                        style={{
-                                                            borderRadius: "10px",
-                                                        }}
-                                                    />
-                                                </div>
-                                            </div>
-                
-                                        </div>
-                                    </div>
+                                    Empowering Businesses with Cutting-Edge IT Solutions
+                                </h2>
+
+                                <p style={{ fontSize: "18px", lineHeight: "1.7", fontFamily: "'Outfit', sans-serif" }}>
+                                    HRIFY is a comprehensive management solutions platform designed to enhance efficiency and drive growth. With two specialized divisions, HRIFY seamlessly integrates cutting-edge technology with expert talent management. HRIFYDIGITAL offers exceptional software, web, and app development, advanced networking solutions, and expert IT services and consulting to future-proof your business.
+                                </p>
+
+                            </div>
+
+                            {/* RIGHT IMAGE - col-4 */}
+                            <div className="col-12 col-md-4 text-center">
+                                <div
+                                    style={{
+                                        backgroundColor: "#FFFFFF",
+                                        padding: "20px",
+                                        borderRadius: "14px",
+                                        display: "inline-block",
+                                    }}
+                                >
+                                    <a
+                                        href="https://www.hrifydigital.com/"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <img
+                                            src={img2}
+                                            alt="IT Solutions"
+                                            className="img-fluid"
+                                            style={{
+                                                borderRadius: "10px",
+                                                cursor: "pointer",
+                                            }}
+                                        />
+                                    </a>
                                 </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
 
                 <div className="container text-center mt-5">
                     <h1 style={{ color: "#015670", fontSize: "36px", fontFamily: "'Outfit', sans-serif" }}><b>What We Do</b></h1>
